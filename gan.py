@@ -100,7 +100,7 @@ class GAN():
     def save_images(self, epoch):
         generated = self.predict_noise(25)
         generated = 0.5 * generated + 0.5
-        self.img_helper.save_image(generated, epoch, "generated/")
+        self.img_helper.save_image(generated, epoch, "generated/gan/")
 
     def predict_noise(self, size):
         noise = np.random.normal(0, 1, (size, self.hidden_dim))
