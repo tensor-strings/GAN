@@ -146,7 +146,7 @@ class WGAN():
         plt.show()
 
 if __name__ == "__main__":
-    from GAN.image_helper import ImageHelper
+    from ..GAN.image_helper import ImageHelper
 
     (X, _), (_, _) = mnist.load_data()
     X_train = X / 127.5 - 1.
