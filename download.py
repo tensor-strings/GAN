@@ -1,5 +1,5 @@
 """
-From https://github.com/carpedm20/DCGAN-tensorflow/
+Modification from https://github.com/carpedm20/DCGAN-tensorflow/
 Modification of https://github.com/stanfordnlp/treelstm/blob/master/scripts/download.py
 Downloads the following:
 - Celeb-A dataset
