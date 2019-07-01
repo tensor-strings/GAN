@@ -1,3 +1,5 @@
+# from https://github.com/NMZivkovic/gan-dcgan.git
+
 import os
 import numpy as np
 import imageio
