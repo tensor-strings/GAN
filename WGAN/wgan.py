@@ -36,10 +36,10 @@ class WGAN():
         gen_model = Sequential([
             Dense(128 * 7 * 7, activation='relu', input_dim=(self.latent_dim)),
             Reshape((7, 7, 128)),
-            Conv2DTranspose(128, kernel_size=3, stride=2, padding='same'),
+            Conv2DTranspose(128, kernel_size=3, strides=2, padding='same'),
             BatchNormalization(momentum=0.8),
             ReLU(),
-            Conv2DTranspose(64, kernel_size=3, stride=2, padding='same'),
+            Conv2DTranspose(64, kernel_size=3, strides=2, padding='same'),
             BatchNormalization(momentum=0.8),
             ReLU(),
             Conv2DTranspose(self.img_shape[2], kernel_size=3, padding='same', activation='tanh')
