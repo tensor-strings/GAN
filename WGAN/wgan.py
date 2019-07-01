@@ -34,21 +34,15 @@ class WGAN():
         gen_input = Input(shape=(self.latent_dim,))
 
         gen_model = Sequential([
-            Dense(128 * 9 * 9, activation='relu', input_dim=(self.latent_dim)),
-            Reshape((9, 9, 128)),
-            Conv2DTranspose(128, kernel_size=4, padding='valid'),
+            Dense(128 * 7 * 7, activation='relu', input_dim=(self.latent_dim)),
+            Reshape((7, 7, 128)),
+            Conv2DTranspose(128, kernel_size=3, stride=2, padding='same'),
             BatchNormalization(momentum=0.8),
             ReLU(),
-            Conv2DTranspose(64, kernel_size=5, padding='valid'),
+            Conv2DTranspose(64, kernel_size=3, stride=2, padding='same'),
             BatchNormalization(momentum=0.8),
             ReLU(),
-            Conv2DTranspose(64, kernel_size=5, padding='valid'),
-            BatchNormalization(momentum=0.8),
-            ReLU(),
-            Conv2DTranspose(64, kernel_size=5, padding='valid'),
-            BatchNormalization(momentum=0.8),
-            ReLU(),
-            Conv2DTranspose(self.img_shape[2], kernel_size=5, padding='valid', activation='tanh')
+            Conv2DTranspose(self.img_shape[2], kernel_size=3, padding='same', activation='tanh')
         ])
 
         gen_output = gen_model(gen_input)
@@ -152,4 +146,4 @@ if __name__ == "__main__":
     X_train = X / 127.5 - 1.
     X_train = np.expand_dims(X_train, axis=3)
     wgan = WGAN(img_shape=X_train[0].shape, latent_dim=100, img_helper=ImageHelper())
-    wgan.train(epochs=4000, train_data=X_train, batch_size=32, sample_interval=50)
+    wgan.train(epochs=40000, train_data=X_train, batch_size=128, sample_interval=100)
