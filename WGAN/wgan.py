@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from GAN.image_helper import *
 
 from tensorflow.keras.activations import tanh
 from tensorflow.keras.datasets import mnist
@@ -147,6 +146,8 @@ class WGAN():
         plt.show()
 
 if __name__ == "__main__":
+    from GAN.image_helper import ImageHelper
+
     (X, _), (_, _) = mnist.load_data()
     X_train = X / 127.5 - 1.
     X_train = np.expand_dims(X_train, axis=3)
