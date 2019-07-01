@@ -1,3 +1,5 @@
+# modified from https://github.com/NMZivkovic/gan-dcgan.git
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
