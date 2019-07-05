@@ -12,7 +12,7 @@ import tensorflow.keras.backend as K
 
 
 class WGAN():
-    def __init__(self, img_shape, latent_dim, img_helper, n_critic=5, clip_val=0.01):
+    def __init__(self, img_shape, latent_dim, img_helper, n_critic=5, clip_val=0.01, dataset=''):
         self.img_helper = img_helper
         self.img_shape = img_shape
         self.latent_dim = latent_dim
@@ -20,6 +20,7 @@ class WGAN():
         self.n_critic = n_critic
         self.clip = clip_val
 
+        self.dataset = dataset
 
         optimizer = RMSprop(lr=5e-5)
 
@@ -120,10 +121,12 @@ class WGAN():
             if epoch % sample_interval == 0:
                 self.save_images(epoch)
 
+        self.img_helper.makegif("generated/", self.dataset)
+
     def save_images(self, epoch):
         generated = self.predict_noise(25)
         generated = 0.5 * generated + 0.5
-        self.img_helper.save_image(generated, epoch, "generated/wgan/")
+        self.img_helper.save_image(generated, epoch, "generated/wgan/", self.dataset)
 
     def predict_noise(self, size):
         noise = np.random.normal(0, 1, (size, self.latent_dim))

@@ -13,10 +13,12 @@ import tensorflow.keras.backend as K
 
 class BSGAN():
 
-    def __init__(self, img_shape, latent_dim, img_helper):
+    def __init__(self, img_shape, latent_dim, img_helper, dataset=''):
         self.img_helper = img_helper
         self.img_shape = img_shape
         self.latent_dim = latent_dim
+
+        self.dataset = dataset
 
         optimizer = Adam(1e-4, 0.5)
 
@@ -100,12 +102,12 @@ class BSGAN():
                 self.save_images(epoch)
 
         self.plot_loss(history)
-        self.img_helper.makegif("generated/")
+        self.img_helper.makegif("generated/", self.dataset)
 
     def save_images(self, epoch):
         generated = self.predict_noise(25)
         generated = 0.5 * generated + 0.5
-        self.img_helper.save_image(generated, epoch, "generated/bsgan/")
+        self.img_helper.save_image(generated, epoch, "generated/bsgan/", self.dataset)
 
     def predict_noise(self, size):
         noise = np.random.normal(0, 1, (size, self.latent_dim))
