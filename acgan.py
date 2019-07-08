@@ -27,9 +27,6 @@ class ACGAN():
         self.build_discriminator(optimizer)
         self.build_acgan(optimizer)
 
-    def wasserstein_loss(self, y_true, y_pred):
-        return K.mean(y_true * y_pred)
-
     def build_generator(self):
         gen_input_noise = Input(shape=(self.latent_dim,))
         gen_input_label = Input(shape=(1,), dtype='int32')
@@ -130,7 +127,7 @@ class ACGAN():
     def save_images(self, epoch):
         generated, labels = self.predict_noise(25)
         generated = 0.5 * generated + 0.5
-        self.img_helper.save_image(generated, epoch, "generated/acgan/", self.dataset)
+        self.img_helper.save_image(generated, epoch, "generated/acgan", self.dataset)
 
     def predict_noise(self, size):
         noise = np.random.normal(0, 1, (size, self.latent_dim))
