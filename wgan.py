@@ -110,7 +110,6 @@ class WGAN():
                 mixed_labels = mixed_labels.reshape((256,1))
                 idx = np.linspace(0, mixed_batch.shape[0]-1, mixed_batch.shape[0]).astype(np.int)
                 np.random.shuffle(idx)
-                print(idx)
 
                 # d_loss_real = self.discriminator.train_on_batch(imgs, valid)
                 # d_loss_fake = self.discriminator.train_on_batch(gen_imgs, fake)
