@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6ce25cd-49a7-49e7-bb87-5b296198fcc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/acgan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bsgan.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsgan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gan.py" beforeDir="false" afterPath="$PROJECT_DIR$/gan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/download.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wgan.py" beforeDir="false" afterPath="$PROJECT_DIR$/wgan.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wgan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="46" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -29,11 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/GAN/lib/python3.7/site-packages/tensorflow/python/keras/engine/training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31586">
+              <caret line="1094" column="6" selection-start-line="1094" selection-start-column="6" selection-end-line="1094" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acgan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="133" column="62" lean-forward="true" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+            <state relative-caret-position="616">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -53,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bsgan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="367">
               <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="67" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -93,16 +99,16 @@
         <option value="$PROJECT_DIR$/image_helper.py" />
         <option value="$PROJECT_DIR$/bsgan.py" />
         <option value="$PROJECT_DIR$/gan.py" />
-        <option value="$PROJECT_DIR$/wgan.py" />
         <option value="$PROJECT_DIR$/acgan.py" />
+        <option value="$PROJECT_DIR$/wgan.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="253" />
-    <option name="y" value="27" />
-    <option name="width" value="1667" />
-    <option name="height" value="1000" />
+    <option name="x" value="753" />
+    <option name="y" value="39" />
+    <option name="width" value="1118" />
+    <option name="height" value="1133" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -110,28 +116,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="GAN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GAN" type="462c0819:PsiDirectoryNode" />
+              <item name="GAN-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GAN-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="GAN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GAN" type="462c0819:PsiDirectoryNode" />
+              <item name="GAN-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GAN-master" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GAN-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GAN-master" type="462c0819:PsiDirectoryNode" />
               <item name="generated" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GAN-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GAN-master" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="wgan" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
@@ -146,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.acgan">
+  <component name="RunManager" selected="Python.wgan">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="GAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,6 +191,9 @@
       <module name="GAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -214,9 +235,6 @@
       <module name="GAN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -234,8 +252,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.acgan" />
         <item itemvalue="Python.wgan" />
+        <item itemvalue="Python.acgan" />
         <item itemvalue="Python.gan" />
       </list>
     </recent_temporary>
@@ -252,17 +270,27 @@
       <updated>1561662058554</updated>
       <workItem from="1561662060869" duration="12039000" />
       <workItem from="1562337958725" duration="1215000" />
+      <workItem from="1562617773231" duration="1298000" />
+      <workItem from="1562691108829" duration="2309000" />
+      <workItem from="1563251160909" duration="2830000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove unused loss function and fix directory string">
+      <created>1562617912393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562617912393</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13254000" />
+    <option name="totallyTimeSpent" value="19691000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="253" y="27" width="1667" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="753" y="39" width="1118" height="1133" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18136953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1775093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,17 +305,23 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3306544" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.33983928" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.26129666" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" x="0" y="0" width="300" height="800" id="Documentation" order="4" side_tool="true" weight="0.2751388" />
+      <window_info anchor="right" x="0" y="0" width="300" height="800" id="Documentation" order="4" side_tool="true" weight="0.465625" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove unused loss function and fix directory string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused loss function and fix directory string" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GAN$acgan.coverage" NAME="acgan Coverage Results" MODIFIED="1562336220005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -314,42 +348,17 @@
     <entry file="file://$PROJECT_DIR$/GAN/gan.py" />
     <entry file="file://$PROJECT_DIR$/BSGAN/bsgan.py" />
     <entry file="file://$PROJECT_DIR$/WGAN/wgan.py" />
-    <entry file="file://$PROJECT_DIR$/generated/wgan/_0.png">
+    <entry file="file://$PROJECT_DIR$/generated/wgan/_0.png" />
+    <entry file="file://$PROJECT_DIR$/generated/wgan/_100.png" />
+    <entry file="file://$PROJECT_DIR$/generated/wgan/_200.png" />
+    <entry file="file://$PROJECT_DIR$/generated/wgan/_400.png" />
+    <entry file="file://$PROJECT_DIR$/generated/acgan/mnist_0.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generated/wgan/_100.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generated/wgan/_200.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generated/wgan/_400.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wgan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="46" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="99" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bsgan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -362,8 +371,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/acgan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="133" column="62" lean-forward="true" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+        <state relative-caret-position="616">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bsgan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/GAN/lib/python3.7/site-packages/tensorflow/python/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31586">
+          <caret line="1094" column="6" selection-start-line="1094" selection-start-column="6" selection-end-line="1094" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wgan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

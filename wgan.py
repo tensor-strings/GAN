@@ -104,10 +104,17 @@ class WGAN():
                 noise = np.random.normal(0, 1, (batch_size, self.latent_dim))
 
                 gen_imgs = self.generator.predict(noise)
+                mixed_batch = np.stack([imgs, gen_imgs], axis=0)
+                mixed_batch = mixed_batch.reshape((256,28,28,1))
+                mixed_labels = np.stack([valid, fake], axis=0)
+                mixed_labels = mixed_labels.reshape((256,1))
+                idx = np.linspace(0, mixed_batch.shape[0]-1, mixed_batch.shape[0]).astype(np.int)
+                np.random.shuffle(idx)
 
-                d_loss_real = self.discriminator.train_on_batch(imgs, valid)
-                d_loss_fake = self.discriminator.train_on_batch(gen_imgs, fake)
-                d_loss = 0.5 * np.add(d_loss_fake, d_loss_real)
+                # d_loss_real = self.discriminator.train_on_batch(imgs, valid)
+                # d_loss_fake = self.discriminator.train_on_batch(gen_imgs, fake)
+                # d_loss = 0.5 * np.add(d_loss_fake, d_loss_real)
+                d_loss = self.discriminator.train_on_batch(mixed_batch[idx], mixed_labels[idx])
 
                 for l in self.discriminator.layers:
                     weights = l.get_weights()
